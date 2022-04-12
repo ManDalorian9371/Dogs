@@ -5,3 +5,4 @@ let container = document.querySelector('.container');
 opened.addEventListener('click', () => container.classList.add('show-footer'));
 closed.addEventListener('click', () => container.classList.remove('show-footer'));
 xMark.addEventListener('click', () => container.classList.remove('show-footer'));
+// go for it
