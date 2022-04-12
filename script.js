@@ -28,4 +28,3 @@ function sendEmail(){
 	var link = 'mailto:mostafarafati888@gmail.com';
 	window.location.href = link;
 }
-var link = 'mailto:mostafarafati888@gmail.com';
