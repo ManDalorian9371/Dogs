@@ -1,5 +1,6 @@
 * {
 	box-sizing: border-box;
+	scroll-behavior: smooth;
 }
 body {
 	list-style: none;
@@ -9,6 +10,7 @@ body {
 	margin: 0;
 	overflow-x: hidden;
 	font-size: larger;
+	transition: 0.6s ease-in;
 }
 
 .container {
@@ -133,37 +135,66 @@ h2 {
 	color: #333;
 	line-height: 1.5;
 }
-main > span {
+footer ul li:last-child {
+	transform: translateX(-200%);
+	cursor: default;
+}
+
+li > span {
 	display: flex;
 	flex-direction: column;
-	position: fixed;
+
 	right: 20px;
 	bottom: 20px;
-	color: rgb(86, 86, 215, 0.8);
+	color: rgba(251, 212, 212, 0.8);
 }
-main > span > strong {
-	color: rgb(39, 39, 101);
+li > span > strong {
+	color: rgb(251, 144, 144);
 }
-footer li:first-child:hover {
-	font-size: 30px;
-	font-weight: bolder;
-	color: rgb(167, 164, 164);
-}
+
 footer li:hover {
-	font-size: 20px;
+	font-size: 17px;
 	color: rgb(176, 174, 174);
 }
-@media screen and (max-width: 600px) {
-	main > span {
-		font-size: smaller;
-		display: flex;
-		flex-direction: column;
-		position: fixed;
-		right: 20px;
-		bottom: 20px;
-		color: rgb(86, 86, 215, 0.4);
-	}
-	main > span > strong {
-		color: rgb(39, 39, 101, 0.5);
-	}
+#xMark i:hover {
+	font-size: 28px;
+	color: rgb(167, 164, 164);
+}
+footer ul li:last-child:hover {
+	font-size: 15px;
+}
+/*popup massegge  */
+.popup {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	line-height: 1.7;
+}
+.popup .popuptext {
+	background: rgba(46, 26, 29, 0.6);
+	width: fit-content;
+	visibility: hidden;
+	font-size: 13px;
+	z-index: 2;
+	color: rgba(251, 212, 212, 0.8);
+	text-align: center;
+	border-radius: 6px;
+	padding: 8px 0;
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	bottom: 125%;
+	left: 50%;
+	margin-left: -80px;
+}
+.popuptext.active {
+	cursor: pointer;
+	transform: translateX(+165%);
+	visibility: visible;
+}
+
+.popup div span > strong {
+	color: rgb(251, 144, 144);
+}
+@media screen and(max-width: 600px) {
 }

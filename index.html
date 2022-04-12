@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rotating Navigation</title>
+    <title>Girls</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -47,17 +47,26 @@
                   </p>
 
               </section>
-                <span class="myName" >Designed by : <strong>Mostafa Rafati</strong> </span>
+                
  
         </main>
-    
+        
     <footer>
         <ul>
           <li id="xMark"><i class="fas fa-times"></i></li>  
-            <li >   <i class="fas fa-home"></i> home</li>
-            <li >   <i class="fas fa-user-alt"></i> about</li>
-            <li >   <i class="fas fa-envelope"></i> contact</li>
+            <li id="home">   <i class="fas fa-home"></i> home</li>
+            <li id="about" >   <i class="fas fa-user-alt"></i> about</li>
+            <li id="contact" >   <i class="fas fa-envelope"></i> contact</li>
+            <li ><span class="myName active" >Designed by : <strong>Mostafa Rafati</strong> </span></li>
+            
         </ul>
+        <section onclick="sendEmail()" class="popup ">
+            <div class="popuptext ">
+                    <span class="email">My email : <strong > mostafarafati888@gmail.com</strong> </span>
+                     <span>My phone number : <strong> +989364873445</strong> </span>
+            </div>
+            
+        </section>
     </footer>
 
     <script type="text/javascript" src="script.js"></script>
