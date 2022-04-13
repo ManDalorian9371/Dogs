@@ -19,7 +19,7 @@ body {
 	transition: transform 1s cubic-bezier(0.075, 0.082, 0.0165, 2);
 	width: 100vw;
 	min-height: 100vh;
-	padding: 60px;
+	padding: 45px;
 }
 .container.show-footer {
 	transform: rotate(-20deg);
@@ -91,7 +91,7 @@ footer {
 footer ul {
 	display: flex;
 	flex-direction: column;
-	padding-left: 30px;
+	padding-left: 22px;
 }
 footer ul li {
 	font-size: 15px;
