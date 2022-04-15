@@ -19,7 +19,8 @@ home.addEventListener('click', () => {
 	document.body.scrollTop = 0;
 	document.documentElement.scrollTop = 0;
 });
-about.addEventListener('click', () => window.open('https://mostafa-rafati.netlify.app/'));
+about.addEventListener('click', () => window.open('about section.html'));
+document.querySelector('.aboutHome').addEventListener('click', () => window.open('index.html'));
 contact.addEventListener('click', () => {
 	document.querySelector('.popuptext').classList.toggle('active');
 });
