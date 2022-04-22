@@ -20,7 +20,7 @@ home.addEventListener('click', () => {
 	document.documentElement.scrollTop = 0;
 });
 about.addEventListener('click', () => window.open('about section.html'));
-document.querySelector('.aboutHome').addEventListener('click', () => window.open('index.html'));
+
 contact.addEventListener('click', () => {
 	document.querySelector('.popuptext').classList.toggle('active');
 });
@@ -29,3 +29,4 @@ function sendEmail(){
 	var link = 'mailto:mostafarafati888@gmail.com';
 	window.location.href = link;
 }
+document.querySelector('.aboutHome').addEventListener('click', () => window.open('index.html'));

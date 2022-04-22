@@ -43,17 +43,12 @@ body {
 #reff {
 	display: flex;
 
-	justify-content: flex-start;
+	justify-content: space-between;
 }
 #reff a {
 	padding: 0 8px 0 8px;
 }
-#reff h3:first-child {
-	padding-right: 18vw;
-}
-#reff h3:last-child {
-	padding-left: 80px;
-}
+
 img {
 	max-height: 800px;
 }
@@ -163,6 +158,9 @@ h2 {
 footer ul li:last-child {
 	transform: translateX(-200%);
 	cursor: default;
+}
+#home {
+	cursor: pointer;
 }
 
 li > span {
